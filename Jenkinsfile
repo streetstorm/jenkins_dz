@@ -11,12 +11,12 @@ pipeline {
                 sh './kubectl get pods'
             }
         }
-        stage('Test') {
+        stage('Deploy') {
             steps {
                 sh 'jenkins_dz/time_5sec.sh'
             }
         }
-        stage('Deploy') {
+        stage('Clean') {
             steps {
                 sh 'rm -rf jenkins_dz'
             }

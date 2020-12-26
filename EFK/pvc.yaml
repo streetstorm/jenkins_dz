@@ -1,0 +1,12 @@
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: elastic-data
+spec:
+  storageClassName: elastic-data
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 25Gi
