@@ -1,7 +1,7 @@
 #!/bin/sh
 for namespace in "dev" "test" "prod"
 do
-cat <<EOF | kubectl apply -f -
+cat <<EOF | ./kubectl apply -f -
 apiVersion: v1
 kind: Namespace
 metadata:
